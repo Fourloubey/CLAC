@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Agence from "./pages/Agence";
 import Projets from "./pages/Projets";
+import MentionsLegales from "./pages/MentionsLegales";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,8 +23,8 @@ const App = () => (
           <Route path="/agence" element={<Agence />} />
           <Route path="/projets" element={<Projets />} />
           <Route path="/contact" element={<Index />} />
-          <Route path="/mentions-legales" element={<Index />} />
-          <Route path="/politique-de-confidentialite" element={<Index />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
