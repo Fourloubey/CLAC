@@ -4,30 +4,38 @@ const Footer = () => {
   return (
     <footer className="w-full px-6 md:px-16 lg:px-20 py-8 mt-auto">
       {/* Main row: CSS Grid 3 equal columns */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm items-center">
+      <div
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm items-start"
+        style={{ gridTemplateColumns: undefined }}
+      >
         {/* Left */}
-        <span className="whitespace-nowrap text-left">CLAC.ARCHI | 44 Rue Chevalier | 33000 Bordeaux</span>
+        <div className="text-center md:text-left">
+          <span className="font-bold">CLAC</span>
+          <br />
+          <span>44 Rue Chevalier - 33000 Bordeaux</span>
+        </div>
 
         {/* Center */}
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex flex-col items-center gap-1">
           <a href="tel:0772090255" className="hover:underline underline-offset-4">
             07 72 09 02 55
           </a>
-          <span>|</span>
           <a href="mailto:contact@clac.archi" className="hover:underline underline-offset-4">
             contact@clac.archi
           </a>
         </div>
 
         {/* Right */}
-        <a
-          href="https://www.instagram.com/clac.archi/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline underline-offset-4 text-right"
-        >
-          Instagram
-        </a>
+        <div className="text-center md:text-right">
+          <a
+            href="https://www.instagram.com/clac.archi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline underline-offset-4"
+          >
+            Instagram
+          </a>
+        </div>
       </div>
 
       {/* Bottom row: centered legal links */}
