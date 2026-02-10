@@ -12,18 +12,27 @@ interface ProjectTemplateProps {
   images: ProjectImage[];
 }
 
+const placeholderRatios = ["aspect-[4/3]", "aspect-[3/4]", "aspect-[1/1]", "aspect-[3/4]", "aspect-[4/3]", "aspect-[1/1]"];
+
 const ProjectTemplate = ({ name, description, images }: ProjectTemplateProps) => {
   return (
     <Layout>
       {/* Photo grid */}
       <section className="w-full px-0 md:px-16 lg:px-20 py-12 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-start">
           {images.map((image, index) => (
-            <div key={index} className="aspect-[4/5] overflow-hidden">
+            <div key={index} className="overflow-hidden">
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
+                onError={(e) => {
+                  // Show placeholder if image not found
+                  const container = e.currentTarget.parentElement;
+                  if (container) {
+                    container.innerHTML = `<div class="w-full ${placeholderRatios[index] || "aspect-[4/3]"} bg-gray-200 flex items-center justify-center text-gray-500 text-sm">Photo ${index + 1}</div>`;
+                  }
+                }}
               />
             </div>
           ))}
@@ -33,9 +42,8 @@ const ProjectTemplate = ({ name, description, images }: ProjectTemplateProps) =>
       {/* Project text – right-aligned */}
       <section className="w-full px-6 md:px-16 lg:px-20 py-12 md:py-20">
         <div className="max-w-2xl ml-auto text-right">
-          <h2 className="text-2xl md:text-3xl font-light tracking-wide mb-8">{name}</h2>
           {description.map((paragraph, index) => (
-            <p key={index} className="text-sm md:text-base leading-relaxed mb-4">
+            <p key={index} className={`text-sm md:text-base leading-relaxed ${paragraph === "" ? "h-3" : "mb-1"}`}>
               {paragraph}
             </p>
           ))}

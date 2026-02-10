@@ -6,10 +6,17 @@ const images = Array.from({ length: 6 }, (_, i) => ({
 }));
 
 const description = [
-  "Transformation d'un ancien atelier artisanal en habitation familiale, au cœur du centre historique de Bordeaux.",
-  "Le parti pris architectural repose sur la conservation de la charpente apparente et l'insertion de volumes habités en bois, suspendus dans la double hauteur.",
-  "Chaque espace a été pensé comme une pièce à vivre à part entière, connectée visuellement aux autres par des percées et des jeux de niveaux.",
-  "Surface : 180 m² — Livraison : 2022",
+  "lucien",
+  "",
+  "situation rénovation",
+  "localisation talence",
+  "surface rénovée 55.00 m²",
+  "coût 100 000 € ttc",
+  "statut livraison 2020",
+  "",
+  "Cette échoppe a été entièrement repensée de façon à proposer un intérieur plus actuel grâce à l'organisation de ses espaces, aux teintes et aux matériaux choisis.",
+  "",
+  "La double hauteur dans le salon ainsi que la mise en place de fenêtres de toit ont permis d'apporter plus de volume et de luminosité au sein de cette échoppe initialement sombre.",
 ];
 
 const Lucien = () => (
