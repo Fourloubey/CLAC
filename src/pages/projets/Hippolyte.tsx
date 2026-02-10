@@ -6,10 +6,15 @@ const images = Array.from({ length: 6 }, (_, i) => ({
 }));
 
 const description = [
-  "Aménagement intérieur complet d'un appartement haussmannien, en préservant les moulures, parquets et cheminées d'époque.",
-  "Le projet introduit une palette de matériaux contemporains — béton ciré, acier brossé, chêne massif — qui viennent sublimer le cadre patrimonial.",
-  "La cuisine et les espaces de vie sont décloisonnés pour créer un grand volume ouvert sur la lumière du sud.",
-  "Surface : 95 m² — Livraison : 2024",
+  "hippolyte",
+  "",
+  "situation texte",
+  "localisation texte",
+  "surface créée texte",
+  "coût texte",
+  "statut texte",
+  "",
+  "texte texte texte",
 ];
 
 const Hippolyte = () => (

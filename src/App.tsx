@@ -14,6 +14,7 @@ import Ulysse from "./pages/projets/Ulysse";
 import Ariette from "./pages/projets/Ariette";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,7 +35,7 @@ const App = () => (
           <Route path="/projets/hippolyte" element={<Hippolyte />} />
           <Route path="/projets/ulysse" element={<Ulysse />} />
           <Route path="/projets/ariette" element={<Ariette />} />
-          <Route path="/contact" element={<Index />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="*" element={<NotFound />} />

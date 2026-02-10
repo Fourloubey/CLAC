@@ -6,10 +6,18 @@ const images = Array.from({ length: 6 }, (_, i) => ({
 }));
 
 const description = [
-  "Construction neuve d'une maison individuelle en lisière de forêt, pensée comme un trait d'union entre l'habitat et le paysage.",
-  "L'ossature bois et les larges baies vitrées dissolvent la frontière entre intérieur et extérieur, offrant un cadre de vie immergé dans la nature.",
-  "Les matériaux biosourcés et la conception bioclimatique traduisent un engagement fort en faveur d'une architecture responsable.",
-  "Surface : 160 m² — Livraison : 2024",
+  "ulysse",
+  "",
+  "situation rénovation, surélévation",
+  "localisation bordeaux",
+  "surface créée 90.00 m²",
+  "surface rénovée 75.00 m²",
+  "coût 310 250 € ttc",
+  "statut livraison 2023",
+  "",
+  "Cette surélévation totale a été pensée de façon à accueillir à l'étage 3 chambres et leurs pièces d'eau permettant ainsi de dédier le rez-de-chaussée aux pièces de vie.",
+  "",
+  "C'est dans le respect des proportions existantes, l'harmonie avec les maisons avoisinantes et la mise en œuvre de matériaux tels que la pierre et le bois que ce nouveau volume a été conçu.",
 ];
 
 const Ulysse = () => (

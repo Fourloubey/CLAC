@@ -6,10 +6,17 @@ const images = Array.from({ length: 6 }, (_, i) => ({
 }));
 
 const description = [
-  "Rénovation d'une longère en pierre, nichée dans la campagne girondine, transformée en résidence de vacances.",
-  "Le projet conserve l'enveloppe rurale tout en y insérant des espaces intérieurs résolument modernes, baignés de lumière grâce à de nouvelles ouvertures cadrant le paysage.",
-  "Les annexes — grange et appentis — sont reconverties en ateliers et espaces d'accueil, prolongeant l'esprit du lieu.",
-  "Surface : 200 m² — Livraison : 2023",
+  "ariette",
+  "",
+  "situation extension",
+  "localisation dax",
+  "surface créée 20.00 m²",
+  "coût 135 500 € ttc",
+  "statut livraison 2023",
+  "",
+  "La création de cette extension a été pensée de façon à offrir un nouveau volume aux lignes plus actuelles tout en s'intégrant avec l'écriture locale de cette habitation existante classée élément remarquable.",
+  "",
+  "Une réflexion sur les techniques et matériaux locaux a été apportée tout au long de ce projet, lui accordant toute sa singularité et légitimité.",
 ];
 
 const Ariette = () => (
