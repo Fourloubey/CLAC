@@ -22,12 +22,13 @@ const Projets = () => {
     <Layout>
       {/* Project grid */}
       {/* Project grid */}
-      <section className="w-full px-0 md:px-16 lg:px-20 py-12 md:py-20">
-        <div className="grid grid-cols-3 gap-0 md:gap-6">
+      <section className="w-full px-0 md:px-16 lg:px-20 py-4 md:py-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {projects.map((project) => (
             <Link
               key={project.slug}
               to={`/projets/${project.slug}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="group relative overflow-hidden aspect-[4/5]"
             >
               <img
@@ -37,7 +38,7 @@ const Projets = () => {
               />
               {/* Glassmorphism label */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-                <span className="bg-white/8 backdrop-blur-md border border-white/10 text-black text-xs tracking-[0.1em] px-2.5 py-1 rounded-full shadow-sm">
+                <span className="bg-white/4 backdrop-blur-md border border-white/5 text-[#000000] text-xs tracking-[0.1em] px-2 py-0.5 rounded-full shadow-sm">
                   {project.name}
                 </span>
               </div>
@@ -47,7 +48,7 @@ const Projets = () => {
       </section>
 
       {/* Quote – right-aligned */}
-      <section className="w-full px-6 md:px-16 lg:px-20 py-16 md:py-24">
+      <section className="w-full px-6 md:px-16 lg:px-20 py-6 md:py-12">
         <blockquote className="max-w-2xl ml-auto text-right">
           <p className="text-lg md:text-xl italic leading-relaxed">
             «&nbsp;Pour nous, chaque projet est l'occasion de conjuguer les échelles&nbsp;: celle de l'intime, de l'usager, et celle du territoire, de son histoire et de ses ressources.&nbsp;»
