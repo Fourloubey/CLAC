@@ -10,7 +10,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full px-4 md:px-16 lg:px-20 pt-4 pb-3 md:pt-10 md:pb-8">
+    <header className="w-full px-4 md:px-16 lg:px-20 pt-4 pb-2 md:pt-8 md:pb-4">
       <div className="flex items-start justify-between">
         {/* Logo – aligned left with hero image */}
         <Link to="/">
