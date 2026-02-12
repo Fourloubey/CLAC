@@ -22,7 +22,7 @@ const Projets = () => {
     <Layout>
       {/* Project grid */}
       {/* Project grid */}
-      <section className="w-full px-0 md:px-16 lg:px-20">
+      <section className="w-full px-0 md:px-16 lg:px-20 -mt-4 md:-mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {projects.map((project) => (
             <Link
