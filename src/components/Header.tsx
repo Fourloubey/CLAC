@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import logoImg from "@/assets/logo-carre.jpg";
 
 const Header = () => {
   const location = useLocation();
@@ -14,14 +15,11 @@ const Header = () => {
       <div className="flex items-start justify-between">
         {/* Logo – aligned left with hero image */}
         <Link to="/">
-          <div>
-            <h1 className="text-2xl md:text-5xl tracking-[0.15em] font-normal leading-none">
-              CLAC
-            </h1>
-            <p className="text-[8px] md:text-xs tracking-[0.05em] text-muted-foreground mt-0.5 md:mt-1">
-              cougoul larroque | architecture conjuguée
-            </p>
-          </div>
+          <img
+            src={logoImg}
+            alt="CLAC – cougoul larroque | architecture conjuguée"
+            className="h-10 md:h-16 w-auto"
+          />
         </Link>
 
         {/* Navigation – grouped right, bold */}

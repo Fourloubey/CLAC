@@ -38,7 +38,7 @@ const Projets = () => {
               />
               {/* Glassmorphism label */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
-                <span className="bg-white/4 backdrop-blur-md border border-white/5 text-[#000000] text-xs tracking-[0.1em] px-2 py-0.5 rounded-full shadow-sm">
+                <span className="bg-white/[0.02] backdrop-blur-md border border-white/[0.03] text-[#000000] text-xs tracking-[0.1em] px-1.5 py-0.5 rounded-full">
                   {project.name}
                 </span>
               </div>
