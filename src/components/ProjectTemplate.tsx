@@ -12,7 +12,7 @@ interface ProjectTemplateProps {
   images: ProjectImage[];
 }
 
-const placeholderRatios = ["aspect-[4/3]", "aspect-[3/4]", "aspect-[1/1]", "aspect-[3/4]", "aspect-[4/3]", "aspect-[1/1]"];
+const placeholderRatios = ["aspect-[4/3]", "aspect-[3/4]", "aspect-[1/1]", "aspect-[3/4]", "aspect-[4/3]", "aspect-[1/1]", "aspect-[4/3]", "aspect-[3/4]", "aspect-[1/1]", "aspect-[4/3]", "aspect-[3/4]", "aspect-[1/1]", "aspect-[4/3]", "aspect-[3/4]", "aspect-[1/1]"];
 
 const ProjectTemplate = ({ name, description, images }: ProjectTemplateProps) => {
   return (

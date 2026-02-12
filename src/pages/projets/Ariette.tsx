@@ -1,7 +1,7 @@
 import ProjectTemplate from "@/components/ProjectTemplate";
 
-const images = Array.from({ length: 6 }, (_, i) => ({
-  src: `/images/projets/ariette/ariette${i + 1}.jpg`,
+const images = Array.from({ length: 15 }, (_, i) => ({
+  src: `https://i.imgur.com/PLACEHOLDER_arriette-${i + 1}.jpg`,
   alt: `Projet Ariette – Photo ${i + 1}`,
 }));
 

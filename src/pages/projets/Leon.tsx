@@ -1,7 +1,7 @@
 import ProjectTemplate from "@/components/ProjectTemplate";
 
 const images = Array.from({ length: 6 }, (_, i) => ({
-  src: `/images/projets/leon/leon${i + 1}.jpg`,
+  src: `https://i.imgur.com/PLACEHOLDER_leon-${i + 1}.jpg`,
   alt: `Projet Léon – Photo ${i + 1}`,
 }));
 
