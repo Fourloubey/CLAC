@@ -18,7 +18,7 @@ const ProjectTemplate = ({ name, description, images }: ProjectTemplateProps) =>
   return (
     <Layout>
       {/* Photo grid */}
-      <section className="w-full px-0 md:px-16 lg:px-20 py-4 md:py-10">
+      <section className="w-full px-0 md:px-16 lg:px-20 -mt-4 md:-mt-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 items-start">
           {images.map((image, index) => (
             <div key={index} className="overflow-hidden">
