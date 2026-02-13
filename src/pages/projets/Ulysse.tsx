@@ -1,19 +1,39 @@
 import ProjectTemplate from "@/components/ProjectTemplate";
 
-const images = Array.from({ length: 6 }, (_, i) => ({
-  src: `https://i.imgur.com/PLACEHOLDER_ulysse-${i + 1}.jpg`,
-  alt: `Projet Ulysse – Photo ${i + 1}`,
-}));
+// 1. Importation des 9 images
+import ulysse1 from "@/assets/ulysse/ulysse-1.jpg";
+import ulysse2 from "@/assets/ulysse/ulysse-2.jpg";
+import ulysse3 from "@/assets/ulysse/ulysse-3.jpg";
+import ulysse4 from "@/assets/ulysse/ulysse-4.jpg";
+import ulysse5 from "@/assets/ulysse/ulysse-5.jpg";
+import ulysse6 from "@/assets/ulysse/ulysse-6.jpg";
+import ulysse7 from "@/assets/ulysse/ulysse-7.jpg";
+import ulysse8 from "@/assets/ulysse/ulysse-8.jpg";
+import ulysse9 from "@/assets/ulysse/ulysse-9.jpg";
 
+// 2. Organisation du tableau des images
+const images = [
+  { src: ulysse1, alt: "Projet Ulysse – Photo 1" },
+  { src: ulysse2, alt: "Projet Ulysse – Photo 2" },
+  { src: ulysse3, alt: "Projet Ulysse – Photo 3" },
+  { src: ulysse4, alt: "Projet Ulysse – Photo 4" },
+  { src: ulysse5, alt: "Projet Ulysse – Photo 5" },
+  { src: ulysse6, alt: "Projet Ulysse – Photo 6" },
+  { src: ulysse7, alt: "Projet Ulysse – Photo 7" },
+  { src: ulysse8, alt: "Projet Ulysse – Photo 8" },
+  { src: ulysse9, alt: "Projet Ulysse – Photo 9" },
+];
+
+// 3. Texte avec tes mots-clés en gras
 const description = [
-  "ulysse",
+  <strong key="1">ulysse</strong>,
   "",
-  "situation rénovation, surélévation",
-  "localisation bordeaux",
-  "surface créée 90.00 m²",
-  "surface rénovée 75.00 m²",
-  "coût 310 250 € ttc",
-  "statut livraison 2023",
+  <><strong key="2">situation</strong> rénovation, surélévation</>,
+  <><strong key="3">localisation</strong> bordeaux</>,
+  <><strong key="4">surface créée</strong> 90.00 m²</>,
+  <><strong key="5">surface rénovée</strong> 75.00 m²</>,
+  <><strong key="6">coût</strong> 310 250 € ttc</>,
+  <><strong key="7">statut</strong> livraison 2023</>,
   "",
   "Cette surélévation totale a été pensée de façon à accueillir à l'étage 3 chambres et leurs pièces d'eau permettant ainsi de dédier le rez-de-chaussée aux pièces de vie.",
   "",
